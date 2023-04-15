@@ -15,15 +15,16 @@
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
+  height: 100vh;
 }
 
 .navbar {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 1rem;
   height: 15vh;
   width: 100%;
+  margin-bottom: 1rem;
 }
 
 nav {
@@ -41,7 +42,9 @@ nav p {
 
 nav ul {
   display: flex;
-  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
   font-weight: bold;
   color: var(--main-color);
 }
@@ -53,4 +56,54 @@ nav ul li {
 
 nav ul li:hover {
   color: var(--hover-color);
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25%;
+  width: 100%;
+  background-image: url(/img/hotdogbgc.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.search form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: 100%;
+}
+
+.search form input[type="search"] {
+  padding: 0.5rem 0.25rem;
+  width: 70%;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+}
+
+.search form input[type="submit"] {
+  padding: 0.5rem 0.25rem;
+  width: 70%;
+  background-color: var(--main-color);
+  color: white;
+  border: none;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+.search form input[type="submit"]:hover {
+  background-color: var(--hover-color);
+}
+
+.exploreFood {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 5vh;
 }
